@@ -1,0 +1,35 @@
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Assets\ApplicationIcon.png
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Mobile Security System.dll
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Mobile Security System.pdb
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\resources.pri
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\AppxManifest.xml
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Mobile Security System.build.appxrecipe
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Properties\WMAppManifest.xml
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\AppManifest.xaml
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Mobile_Security_System_Debug_AnyCPU.xap
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\App.g.cs
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\MainPage.g.cs
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\Mobile Security System.g.resources
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\Mobile_Security_System.Resources.AppResources.resources
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\Mobile Security System.csproj.GenerateResource.Cache
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\Mobile Security System.dll
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\Mobile Security System.pdb
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\priconfig.xml
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\priconfig.xml.intermediate
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\layout.resfiles
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\layout.resfiles.intermediate
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\resources.resfiles
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\resources.resfiles.intermediate
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\pri.resfiles
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\pri.resfiles.intermediate
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\qualifiers.txt
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\qualifiers.txt.intermediate
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\ProjectArchitectures.txt
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\MDILProjectFiles.xml
+c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\XapCacheFile.xml
