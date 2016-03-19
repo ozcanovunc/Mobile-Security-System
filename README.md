@@ -1,4 +1,5 @@
-# Mobile-Security-System
+## Mobile Security System ##
+#### GTU CSE496 - Final Project II ####
 
 ► Very first security monitor app on Windows Phone Store. 
 
