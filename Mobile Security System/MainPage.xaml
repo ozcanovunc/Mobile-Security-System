@@ -13,23 +13,41 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
 
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar 
+            IsVisible="True" 
+            IsMenuEnabled="True">
+
+            <shell:ApplicationBar.Buttons>
+                <shell:ApplicationBarIconButton 
+                    IconUri="/Assets/Flashlight.png" 
+                    Text="flashlight"
+                    Click="FlashlightClicked"/>
+            </shell:ApplicationBar.Buttons>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
     <Grid>
+        <TextBlock 
+            Name="textBlock"
+            TextWrapping="Wrap"
+            Text="Detected"
+            VerticalAlignment="Top"
+            FontSize="40"
+            Margin="160,25,160,0"
+            Visibility="Collapsed"/>
 
-        <TextBlock Name="textBlock"
-                   TextWrapping="Wrap"
-                   Text="Detected"
-                   VerticalAlignment="Top"
-                   FontSize="50"
-                   Visibility="Collapsed"
-                   Margin="140,30,140,0"/>
-
-        <Canvas RenderTransformOrigin="0.5,0.5">
-            <Canvas.RenderTransform>
-                <CompositeTransform Rotation="90"/>
-            </Canvas.RenderTransform>
-
+        <Canvas Margin="10,100,10,20" >
             <Canvas.Background>
-                <VideoBrush x:Name="videoBrush"/>
+                <VideoBrush 
+                    x:Name="videoBrush">
+                    <VideoBrush.RelativeTransform>
+                        <CompositeTransform 
+                            CenterX="0.5" 
+                            CenterY="0.5" 
+                            Rotation="90"/>
+                    </VideoBrush.RelativeTransform>
+                </VideoBrush>
             </Canvas.Background>
         </Canvas>
     </Grid>
