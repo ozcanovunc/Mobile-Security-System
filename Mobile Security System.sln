@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile Security System", "Mobile Security System\Mobile Security System.csproj", "{569C0B8D-2E01-4AD5-9D29-8E0BBA5B4EE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSS.Service", "MSS.Service\MSS.Service.csproj", "{EFAB9737-6195-4C8B-97D7-93F999CF392A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,18 @@ Global
 		{569C0B8D-2E01-4AD5-9D29-8E0BBA5B4EE9}.Release|x86.ActiveCfg = Release|x86
 		{569C0B8D-2E01-4AD5-9D29-8E0BBA5B4EE9}.Release|x86.Build.0 = Release|x86
 		{569C0B8D-2E01-4AD5-9D29-8E0BBA5B4EE9}.Release|x86.Deploy.0 = Release|x86
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Debug|x86.Build.0 = Debug|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Release|ARM.Build.0 = Release|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Release|x86.ActiveCfg = Release|Any CPU
+		{EFAB9737-6195-4C8B-97D7-93F999CF392A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

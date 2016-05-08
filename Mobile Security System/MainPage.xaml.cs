@@ -1,5 +1,6 @@
 ﻿using Microsoft.Devices;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -33,7 +34,7 @@ namespace Mobile_Security_System
 
             // Start the periodic event for motion detection
             cameraTimer_ = new DispatcherTimer();
-            cameraTimer_.Interval = TimeSpan.FromMilliseconds(250);
+            cameraTimer_.Interval = TimeSpan.FromMilliseconds(500);
             cameraTimer_.Tick += (o, arg) => ScanPreviewBuffer();
             cameraTimer_.Start();
 
@@ -77,7 +78,7 @@ namespace Mobile_Security_System
             UpdateFlashState();
         }
 
-        private void ScanPreviewBuffer()
+        private async void ScanPreviewBuffer()
         {
             if (cameraInitialized_)
             {
@@ -104,6 +105,16 @@ namespace Mobile_Security_System
                     if (DetectMotion(firstImageToCompare_, newImage))
                     {
                         textBlock.Visibility = Visibility.Visible;
+                        if (App.RoamingSettings.Values["Emailactivate"].Equals(true))
+                        {
+                            bool mailSent = await Controllers.MailController.SendMail
+                                ("MSS", "Intruder detected!", 
+                                App.RoamingSettings.Values["Email"].ToString());
+                            if (!mailSent)
+                            {
+                                MessageBox.Show("Email could not be sent!");
+                            }
+                        }
                     }
                     else
                     {
@@ -149,6 +160,46 @@ namespace Mobile_Security_System
             }
 
             return difference > NumOfDifferentPixels;
+        }
+
+        private void SignoutClicked(object sender, EventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show
+                ("Are you sure you want to sign out?", "Sign out", MessageBoxButton.OKCancel);
+            if (result == MessageBoxResult.OK)
+            {
+                App.RoamingSettings.Values["Loggedin"] = false;
+                App.Current.Terminate();
+            }
+        }
+
+        private async void DeleteMembershipClicked(object sender, EventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show
+                ("Are you sure you want to delete your membership?", 
+                "Delete membership", MessageBoxButton.OKCancel);
+            if (result == MessageBoxResult.OK)
+            {
+                await Controllers.UserController.DeleteUser
+                    (App.RoamingSettings.Values["Email"].ToString());
+                App.RoamingSettings.Values["Loggedin"] = false;
+                App.Current.Terminate();
+            }
+        }
+
+        private void MailEnableDisableClick(object sender, EventArgs e)
+        {
+            if (App.RoamingSettings.Values["Emailactivate"] == null || 
+                App.RoamingSettings.Values["Emailactivate"].Equals(false))
+            {
+                App.RoamingSettings.Values["Emailactivate"] = true;
+                MessageBox.Show("Email notifications enabled!");
+            }
+            else
+            {
+                App.RoamingSettings.Values["Emailactivate"] = false;
+                MessageBox.Show("Email notifications disabled!");
+            }
         }
 
         // If flash is activated, then deactivate it (or vice versa)

@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Mobile_Security_System.Resources;
+using Windows.Storage;
 
 namespace Mobile_Security_System
 {
@@ -17,6 +18,7 @@ namespace Mobile_Security_System
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public static PhoneApplicationFrame RootFrame { get; private set; }
+        public static ApplicationDataContainer RoamingSettings;
 
         /// <summary>
         /// Constructor for the Application object.
@@ -55,6 +57,7 @@ namespace Mobile_Security_System
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 
+            RoamingSettings = ApplicationData.Current.RoamingSettings;
         }
 
         // Code to execute when a contract activation such as a file open or save picker returns 

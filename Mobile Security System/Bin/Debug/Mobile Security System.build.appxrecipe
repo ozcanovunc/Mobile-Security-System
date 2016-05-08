@@ -21,6 +21,39 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Mobile Security System.dll">
       <PackagePath>Mobile Security System.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll">
+      <PackagePath>System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml">
+      <PackagePath>System.Net.Http.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
+      <PackagePath>System.Net.Http.Extensions.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
+      <PackagePath>System.Net.Http.Primitives.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AppBar1\add.png">
+      <PackagePath>Assets\AppBar1\add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AppBar\add.png">
+      <PackagePath>Assets\AppBar\add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AppBar\feature.email.png">
+      <PackagePath>Assets\AppBar\feature.email.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Flashlight.png">
       <PackagePath>Assets\Flashlight.png</PackagePath>
     </AppxPackagedFile>
@@ -39,6 +72,9 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\main-background.png">
+      <PackagePath>Assets\main-background.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>

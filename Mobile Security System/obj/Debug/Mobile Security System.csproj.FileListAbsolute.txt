@@ -33,3 +33,16 @@ c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System
 c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\ProjectArchitectures.txt
 c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\MDILProjectFiles.xml
 c:\users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\XapCacheFile.xml
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\System.Net.Http.dll
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\System.Net.Http.xml
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\Mobile Security System.csprojResolveAssemblyReference.cache
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\System.Net.Http\en-US\System.Net.Http.SR.resw
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\System.Net.Http.pri
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\System.Net.Http\qualifiers.txt
+C:\Users\ozcanovunc\documents\visual studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\SigninPage.g.cs

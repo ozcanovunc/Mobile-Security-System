@@ -1,0 +1,32 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Mobile_Security_System.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <Grid>
+        <Image Source="/Assets/main-background.png" Stretch="Fill" />
+
+        <TextBlock Text="Security System" Margin="45,110,20,20" FontSize="54" Foreground="White" FontWeight="Bold" FontFamily="Century Gothic"/>
+
+        <StackPanel Margin="20,260,20,430">
+            <TextBox Name="LoginPage_MailText" MaxLength="30" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="Century Gothic"/>
+        </StackPanel>
+
+        <StackPanel Margin="20,330,20,230">
+            <PasswordBox Name="LoginPage_PasswordText" MaxLength="30" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="Century Gothic"/>
+            <Button Name="LoginPage_SigninButton" Content="Sign in" BorderThickness="2" BorderBrush="White" VerticalAlignment="Center" Height="70" Click="LoginPage_SigninButton_Click" FontFamily="Century Gothic" Margin="5,0,5,0"/>
+            <Button Name="LoginPage_SignupButton" Content="Sign up" BorderThickness="2" BorderBrush="White" VerticalAlignment="Center" Height="70" Click="LoginPage_SignupButton_Click" FontFamily="Century Gothic" Margin="5,0,5,0"/>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>
