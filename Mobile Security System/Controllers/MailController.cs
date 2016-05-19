@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using Mobile_Security_System.Models;
+using Newtonsoft.Json;
 using System;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Mobile_Security_System.Controllers
@@ -12,12 +14,22 @@ namespace Mobile_Security_System.Controllers
             BaseAddress = new Uri("http://mobilesecuritysystem.somee.com/get/")
         };
 
-        public static async Task<bool> SendMail(string subject, string body, string to)
+        public static async Task<bool> SendMail(MailModel mail)
         {
-            string requestString = "sendmail?subject=" + subject + "&body=" + body + "&to=" + to;
-            string requestResult = await ControllerClient.GetStringAsync(requestString);
+            var stringContent = new StringContent(
+                JsonConvert.SerializeObject(mail), Encoding.UTF8, "application/json");
+            var response = await ControllerClient.PostAsync(
+                ControllerClient .BaseAddress + "sendmail", stringContent);
+            var result = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<bool>(requestResult);
+            if (result == "true")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

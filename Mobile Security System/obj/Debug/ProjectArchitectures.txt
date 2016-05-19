@@ -1,1 +1,1 @@
-C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Mobile Security System.csproj;neutral
+C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Mobile Security System.csproj;neutral

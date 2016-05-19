@@ -1,15 +1,23 @@
-﻿using System.Net;
-using System.Web.Http;
+﻿using MSS.Service.Models;
+using System;
+using System.IO;
+using System.Net;
 using System.Net.Mail;
+using System.Web.Http;
 
 namespace MSS.Service.Controllers
 {
     public class MailController : ApiController
     {
         [Route("get/sendmail")]
-        [HttpGet]
-        public bool SendMail(string subject, string body, string to)
+        [HttpPost]
+        public bool SendMail([FromBody]MailModel value)
         {
+            string  image = value.Image,
+                    subject = value.Subject,
+                    body = value.Body,
+                    to = value.To;
+
             try
             {
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com");
@@ -20,11 +28,20 @@ namespace MSS.Service.Controllers
                 smtp.EnableSsl = true;
 
                 MailMessage mail = new MailMessage();
+
                 mail.From = new MailAddress("notifications.mss@gmail.com");
                 mail.To.Add(to);
                 mail.Subject = subject;
                 mail.Body = body;
-                
+
+                if (image != null)
+                {
+                    mail.Attachments.Add(
+                        new Attachment(
+                            new MemoryStream(
+                                Convert.FromBase64String(image)), "Screenshot.jpg"));
+                }
+
                 smtp.Send(mail);
                 return true;
             }

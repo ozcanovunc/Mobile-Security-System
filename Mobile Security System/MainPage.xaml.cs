@@ -1,10 +1,11 @@
 ﻿using Microsoft.Devices;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
+using Mobile_Security_System.Models;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.IO;
 using System.Windows;
+using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Threading;
 
@@ -14,9 +15,10 @@ namespace Mobile_Security_System
     {
         private PhotoCamera camera_;
         private Size cameraRes_;
-        private bool cameraInitialized_;
+        private bool cameraAvailable_;
+        private bool mailAvailable_;
         private Image firstImageToCompare_;
-        private readonly DispatcherTimer cameraTimer_, flashTimer_;
+        private readonly DispatcherTimer cameraTimer_, flashTimer_, mailTimer_;
 
         // Hour thresholds for deciding if we should activate the flash or not
         private const int NightHourStarting = 18;
@@ -30,7 +32,8 @@ namespace Mobile_Security_System
         {
             InitializeComponent();
 
-            cameraInitialized_ = false;
+            cameraAvailable_ = false;
+            mailAvailable_ = true;
 
             // Start the periodic event for motion detection
             cameraTimer_ = new DispatcherTimer();
@@ -43,6 +46,12 @@ namespace Mobile_Security_System
             flashTimer_.Interval = TimeSpan.FromHours(1);
             flashTimer_.Tick += (o, arg) => UpdateFlashState();
             flashTimer_.Start();
+
+            // Run once a minute, make the phone available for sending mail
+            mailTimer_ = new DispatcherTimer();
+            mailTimer_.Interval = TimeSpan.FromMinutes(1);
+            mailTimer_.Tick += (o, arg) => UpdateMailState();
+            mailTimer_.Start();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -74,15 +83,21 @@ namespace Mobile_Security_System
             resList.MoveNext();
             cameraRes_ = camera_.Resolution = resList.Current;
 
-            cameraInitialized_ = true;
+            cameraAvailable_ = true;
             UpdateFlashState();
+        }
+
+        public static void FromByteArray(WriteableBitmap bmp, int[] buffer)
+        {
+            Buffer.BlockCopy(buffer, 0, bmp.Pixels, 0, buffer.Length);
         }
 
         private async void ScanPreviewBuffer()
         {
-            if (cameraInitialized_)
+            if (cameraAvailable_)
             {
                 int[] ARGBPx = new int[(int)cameraRes_.Width * (int)cameraRes_.Height];
+                MailModel mail = new MailModel();
 
                 // Get the current frame
                 camera_.Focus();
@@ -105,14 +120,30 @@ namespace Mobile_Security_System
                     if (DetectMotion(firstImageToCompare_, newImage))
                     {
                         textBlock.Visibility = Visibility.Visible;
-                        if (App.RoamingSettings.Values["Emailactivate"].Equals(true))
+
+                        // Encode the preview buffer as string
+                        using (MemoryStream ms = new MemoryStream())
                         {
-                            bool mailSent = await Controllers.MailController.SendMail
-                                ("MSS", "Intruder detected!", 
-                                App.RoamingSettings.Values["Email"].ToString());
-                            if (!mailSent)
+                            WriteableBitmap wbmp = new WriteableBitmap(
+                                (int)cameraRes_.Width, (int)cameraRes_.Height);
+                            ARGBPx.CopyTo(wbmp.Pixels, 0);
+                            wbmp.SaveJpeg(ms, 
+                                (int)cameraRes_.Width, (int)cameraRes_.Height, 0, 50);
+                       
+                            mail.Image = Convert.ToBase64String(ms.ToArray());
+                            mail.Subject = "MSS";
+                            mail.Body = "Intruder detected!";
+                            mail.To = App.RoamingSettings.Values["Email"].ToString();
+                        }
+
+                        // Send e-mail
+                        if (App.RoamingSettings.Values["Emailactivate"].Equals(true) && mailAvailable_)
+                        {
+                            mailAvailable_ = false;
+
+                            if (!await Controllers.MailController.SendMail(mail))
                             {
-                                MessageBox.Show("Email could not be sent!");
+                                 MessageBox.Show("Email could not be sent!");
                             }
                         }
                     }
@@ -130,7 +161,7 @@ namespace Mobile_Security_System
         // Turn on or off the flash by hour of the day 
         private void UpdateFlashState()
         {
-            if (cameraInitialized_ && camera_.IsFlashModeSupported(FlashMode.On))
+            if (cameraAvailable_ && camera_.IsFlashModeSupported(FlashMode.On))
             {
                 if (DateTime.Now.Hour > NightHourStarting || 
                     DateTime.Now.Hour < NightHourEnding)
@@ -142,6 +173,12 @@ namespace Mobile_Security_System
                     camera_.FlashMode = FlashMode.Off;
                 }
             }
+        }
+
+        // Run once a minute, make the phone available for sending mail
+        private void UpdateMailState()
+        {
+            mailAvailable_ = true;
         }
 
         // Returns true if there is a difference between rhs and lhs
@@ -205,7 +242,7 @@ namespace Mobile_Security_System
         // If flash is activated, then deactivate it (or vice versa)
         private void FlashlightClicked(object sender, EventArgs e)
         {
-            if (cameraInitialized_ && camera_.IsFlashModeSupported(FlashMode.On))
+            if (cameraAvailable_ && camera_.IsFlashModeSupported(FlashMode.On))
             {
                 if (camera_.FlashMode == FlashMode.On)
                 {

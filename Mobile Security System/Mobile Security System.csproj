@@ -97,6 +97,7 @@
     <Compile Include="Controllers\MailController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="Models\MailModel.cs" />
     <Compile Include="SigninPage.xaml.cs">
       <DependentUpon>SigninPage.xaml</DependentUpon>
     </Compile>

@@ -1,116 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-NLQ49LQ</Machine>
-    <WindowsUser>ozcanovunc</WindowsUser>
+    <Machine>DESKTOP-E7AGI4V</Machine>
+    <WindowsUser>ozcan</WindowsUser>
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>569c0b8d-2e01-4ad5-9d29-8e0bba5b4ee9</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\Mobile Security System.dll">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Bin\Debug\Mobile Security System.dll">
       <PackagePath>Mobile Security System.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml">
       <PackagePath>Newtonsoft.Json.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml">
       <PackagePath>System.Net.Http.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
       <PackagePath>System.Net.Http.Extensions.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
       <PackagePath>System.Net.Http.Primitives.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AppBar1\add.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\AppBar1\add.png">
       <PackagePath>Assets\AppBar1\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AppBar\add.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\AppBar\add.png">
       <PackagePath>Assets\AppBar\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AppBar\feature.email.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\AppBar\feature.email.png">
       <PackagePath>Assets\AppBar\feature.email.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Flashlight.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Flashlight.png">
       <PackagePath>Assets\Flashlight.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\AlignmentGrid.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\ApplicationIcon.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\BadgeLogo.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Flashlight2.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Flashlight2.png">
       <PackagePath>Assets\Flashlight2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\main-background.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\main-background.png">
       <PackagePath>Assets\main-background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\SquareTile150x150.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\SquareTile150x150.png">
       <PackagePath>Assets\SquareTile150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\SquareTile71x71.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\SquareTile71x71.png">
       <PackagePath>Assets\SquareTile71x71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\WideLogo.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\WideLogo.png">
       <PackagePath>Assets\WideLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Tiles\FlipCycleTileLarge.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Tiles\FlipCycleTileLarge.png">
       <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Tiles\FlipCycleTileMedium.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Tiles\FlipCycleTileMedium.png">
       <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Tiles\FlipCycleTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Tiles\FlipCycleTileSmall.png">
       <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Tiles\IconicTileMediumLarge.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Tiles\IconicTileMediumLarge.png">
       <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Assets\Tiles\IconicTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Mobile Security System\Mobile Security System\Bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\ozcan\Documents\GitHub\Mobile-Security-System\Mobile Security System\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
